@@ -17,7 +17,7 @@ const ORIGIN = "http://localhost:3000";
 const CHAIN_ID = 42161;
 const LOGIN_URI = `${SOLVER_BASE_URL}/login`; 
 const ISSUED_AT = new Date().toISOString(); 
-const EXPIRATION_DATE = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(); 
+const EXPIRATION_DATE = new Date(Date.now() + 24 * 60 * 60 * 100).toISOString(); 
 
 async function getNonce(address) {
   const url = `${SOLVER_BASE_URL}/nonce/${address}`;
